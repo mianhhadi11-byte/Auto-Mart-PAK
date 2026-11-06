@@ -8,9 +8,29 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.next
+out
+build
 dist
 dist-ssr
 *.local
+
+# Next.js
+.vercel
+*.tsbuildinfo
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local editorial store and uploaded media
+data/mictech.json
+public/uploads
+
+# Sanity build output and local metadata
+.sanity
+sanity.cli.local.ts
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +42,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
+.env*
